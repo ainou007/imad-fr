@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Logo = () => {
   return (
     <Link href={'#home'}>
-      <div className='flex items-center gap-1'>
+      <div className='flex items-center gap-1 text-left'>
         <div
           className='flex h-8 w-12 overflow-hidden bg-primary p-1.5'
           style={{
