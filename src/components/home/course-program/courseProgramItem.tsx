@@ -23,7 +23,7 @@ const CourseProgramItem = (courseProgramItem: CourseProgam) => {
           })}
         </ul>
         <Link href={route} className={buttonVariants()}>
-          découvrir plus a <MdNavigateNext />
+          découvrir plus <MdNavigateNext />
         </Link>
       </div>
     </div>
