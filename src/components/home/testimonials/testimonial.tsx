@@ -16,9 +16,9 @@ const Testimonial = ({ name, description, img }: TestimonialProps) => {
       </div>
       <div className='w-full'>
         <p className=''>
-          <span className='mr-1 text-lg font-bold italic leading-none text-gray-400'>"</span>
+          <span className='mr-1 text-lg font-bold italic leading-none text-gray-400'>&quot;</span>
           {description}
-          <span className='ml-1 text-lg font-bold italic leading-none text-gray-400'>"</span>
+          <span className='ml-1 text-lg font-bold italic leading-none text-gray-400'>&quot;</span>
         </p>
       </div>
     </div>
