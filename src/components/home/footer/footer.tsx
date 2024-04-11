@@ -37,10 +37,10 @@ const Footer = () => {
           <h2 className='mb-3 text-xl font-bold capitalize'>Trouvez-nous sur</h2>
           <ul className='flex gap-1'>
             {socialMedia.map((item, index) => {
-              const { icon: Icon } = item;
+              const { link, icon: Icon } = item;
               return (
                 <li key={index}>
-                  <Link className='flex size-12 items-center justify-center rounded-full border' href=''>
+                  <Link className='flex size-12 items-center justify-center rounded-full border' href={link}>
                     <Icon size={20} />
                   </Link>
                 </li>
@@ -53,7 +53,7 @@ const Footer = () => {
       {/* Rights */}
       <div className='bg-gray-50 p-5 text-center text-xs'>
         Tous droits réservés pour{' '}
-        <Link className='font-semibold text-primary' href={'/'}>
+        <Link className='font-semibold text-primary underline' href={'#home'}>
           Imad ZNITI{' '}
         </Link>
         2024

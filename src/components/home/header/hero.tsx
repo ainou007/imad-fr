@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import Image from 'next/image';
 import { FaSmileWink } from 'react-icons/fa';
 import { FaPeoplePulling } from 'react-icons/fa6';
@@ -6,6 +6,7 @@ import hero_img from '../../../../public/prof.png';
 import State from '@/components/home/header/state';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 const Hero = () => {
   return (
@@ -31,14 +32,17 @@ const Hero = () => {
           </div>
           {/*  */}
           <div className='flex flex-col gap-3 xs:flex-row'>
-            <Button>
+            <Link href={'#courseProgram'} className={buttonVariants()}>
               <FaSmileWink size={18} />
               Allons-y
-            </Button>{' '}
-            <Button variant={'outline'}>
+            </Link>{' '}
+            <Link
+              href='https://wa.me/+212645052133?text=je%20suis%20int%C3%A9ress%C3%A9%20%C3%A0%20vous%20rejoindre'
+              target='_blank'
+              className={cn(buttonVariants({ variant: 'outline' }))}>
               <FaPeoplePulling size={18} />
               Rejoignez nous
-            </Button>
+            </Link>
           </div>
         </div>
         {/* Image */}
@@ -47,7 +51,7 @@ const Hero = () => {
         </div>
         {/* Arrow dow (Next Section ) */}
         <div className='absolute  bottom-6 left-1/2 hidden -translate-x-1/2 lg:block  '>
-          <Link href='#'>
+          <Link href='#courseProgram'>
             <MdKeyboardDoubleArrowDown className='animate-bounce text-5xl text-primary' />
           </Link>
         </div>

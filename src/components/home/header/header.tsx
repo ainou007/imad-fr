@@ -1,5 +1,5 @@
 import Hero from '@/components/home/header/hero';
-import Navbar from '@/components/home/header/navbar';
+import Navbar from '@/components/home/header/navbar/navbar';
 
 const Header = () => {
   return (
