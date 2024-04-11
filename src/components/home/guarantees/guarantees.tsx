@@ -6,7 +6,7 @@ import { guarantees } from '@/constants/guarantees';
 
 const Guarantees = () => {
   return (
-    <SectionLayout>
+    <SectionLayout id='guarantees'>
       <SectionTitle title='Que vais-je vous garantir ?' description='Tu vas pouvoir apprendre de façon organisée, à ton rythme et dans le plaisir  !' />
       <div className='container relative flex  flex-col justify-between gap-8 text-center lg:flex-row'>
         {guarantees.map((item, index) => {

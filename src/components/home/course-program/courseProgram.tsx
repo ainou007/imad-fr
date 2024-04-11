@@ -4,7 +4,7 @@ import { coursProgram } from '@/constants/courseProgram';
 import CourseProgramItem from '@/components/home/course-program/courseProgramItem';
 const CourseProgram = () => {
   return (
-    <SectionLayout>
+    <SectionLayout id='courseProgram'>
       <div className='container'>
         <SectionTitle title='programme des cours' description='Tu auras accès à tous les cours et tous les niveaux !' />
         <div className='space-y-10'>

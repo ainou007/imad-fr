@@ -1,10 +1,15 @@
+'use client';
 import Logo from '@/components/logo';
-import { buttonVariants } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetClose, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { navLinks } from '@/constants/navLinks';
 import Link from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { useState } from 'react';
+import { Separator } from '@/components/ui/separator';
 const Navbar = () => {
+  const [hash, setHash] = useState<string | undefined>('');
+
+  console.log(hash);
   return (
     <nav className='fixed left-0 top-0 z-50 w-full bg-white shadow-lg '>
       <div className='container flex h-20 items-center justify-between'>
@@ -14,20 +19,19 @@ const Navbar = () => {
             {navLinks.map((link, index) => {
               const { label, route } = link;
               return (
-                <Link className='capitalize' key={index} href={route}>
+                <Link
+                  onClick={() => {
+                    setHash(route);
+                  }}
+                  className='capitalize'
+                  key={index}
+                  href={route}>
                   {label}
                 </Link>
               );
             })}
           </ul>
-          <div className='flex gap-2'>
-            <Link className={buttonVariants({ size: 'sm' })} href={'/login'}>
-              Se connecter
-            </Link>
-            <Link className={buttonVariants({ variant: 'outline', size: 'sm' })} href={'/register'}>
-              Rejoignez-nous{' '}
-            </Link>
-          </div>
+          {/* <Connection /> */}
         </div>
 
         <Sheet>
@@ -39,17 +43,20 @@ const Navbar = () => {
               <SheetTitle>
                 <Logo />
               </SheetTitle>
-              <ul>
-                {navLinks.map((link, index) => {
-                  const { label, route } = link;
-                  return (
-                    <li key={index}>
-                      <Link href={route}> {label} </Link>
-                    </li>
-                  );
-                })}
-              </ul>
             </SheetHeader>
+            <div className='my-5'></div>
+            <ul className='flex flex-col gap-3'>
+              {navLinks.map((link, index) => {
+                const { label, route } = link;
+                return (
+                  <li key={index} className=''>
+                    <SheetClose asChild>
+                      <Link href={route}> {label} </Link>
+                    </SheetClose>
+                  </li>
+                );
+              })}
+            </ul>
           </SheetContent>
         </Sheet>
       </div>

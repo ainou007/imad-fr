@@ -5,7 +5,7 @@ import { testimonials } from '@/data/testimonials';
 
 const Testimonials = () => {
   return (
-    <SectionLayout>
+    <SectionLayout id='testimonials'>
       <div className='container'>
         <SectionTitle
           title="OPINIONS D'ÉTUDIANTS"
