@@ -22,8 +22,8 @@ const Hero = () => {
             Apprenez le français avec le meilleur professeur
           </h1>
           <p className='mt-4 text-center text-sm md:text-base lg:text-left lg:text-xl'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, numquam minima magni magnam deserunt, quis eos eius ab quasi sapiente,
-            iste cupiditate quibusdam unde quidem ipsam dolorum illo fugiat debitis.
+            Découvrez l'art de la langue française avec un professeur passionné et expérimenté. Améliorez votre compréhension, votre expression et votre
+            prononciation grâce à des cours personnalisés adaptés à tous les niveaux. Rejoignez dès aujourd'hui et maîtrisez le français avec confiance !
           </p>
           <div className='flex flex-col gap-4 xs:flex-row'>
             <State stateNumber='300k+' lable='Abonnés sur youtube' />

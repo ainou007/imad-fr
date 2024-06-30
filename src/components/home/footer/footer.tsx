@@ -14,8 +14,8 @@ const Footer = () => {
             <Logo />
           </div>
           <p className=''>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus cum saepe laboriosam. Voluptatibus iusto, fuga facere alias ea voluptatum,
-            laudantium sunt ut voluptatem optio praesentium labore autem quam debitis quia!
+            Découvrez l'art de la langue française avec un professeur passionné et expérimenté. Améliorez votre compréhension, votre expression et votre
+            prononciation grâce à des cours personnalisés adaptés à tous les niveaux. Rejoignez dès aujourd'hui et maîtrisez le français avec confiance !
           </p>
         </div>
         {/* Links */}

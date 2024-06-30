@@ -13,7 +13,7 @@ const CourseProgramItem = (courseProgramItem: CourseProgam) => {
       <div className={`order-2 w-full space-y-6 lg:w-1/2 md:${direction === courseDirectionsDisplay.rtl ? 'order-2' : 'order-1'}`}>
         <h3 className='text-2xl font-semibold'> {title} </h3>
         <p>{description}</p>
-        <ul className='space-y-2'>
+        {/* <ul className='space-y-2'>
           {features.map((feat, index) => {
             return (
               <li className='flex items-center gap-2 font-semibold' key={index}>
@@ -21,7 +21,7 @@ const CourseProgramItem = (courseProgramItem: CourseProgam) => {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
         <Link href={route} className={buttonVariants()}>
           découvrir plus <MdNavigateNext />
         </Link>
