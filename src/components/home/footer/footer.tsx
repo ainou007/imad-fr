@@ -14,8 +14,8 @@ const Footer = () => {
             <Logo />
           </div>
           <p className=''>
-            Découvrez l'art de la langue française avec un professeur passionné et expérimenté. Améliorez votre compréhension, votre expression et votre
-            prononciation grâce à des cours personnalisés adaptés à tous les niveaux. Rejoignez dès aujourd'hui et maîtrisez le français avec confiance !
+            Découvrez l&lsquo;art de la langue française avec un professeur passionné et expérimenté. Améliorez votre compréhension, votre expression et votre
+            prononciation grâce à des cours personnalisés adaptés à tous les niveaux. Rejoignez dès aujourd&lsquo;hui et maîtrisez le français avec confiance !
           </p>
         </div>
         {/* Links */}
